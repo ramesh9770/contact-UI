@@ -11,15 +11,17 @@
     </thead>
     <tbody>
 
+   
+
         <tr *ngFor="let contact of contacts">
-            <td>{{contact.contractId}}</td>
-            <td>{{contact.contractName}}</td>
-            <td>{{contact.contractEmail}}</td>
-            <td>{{contact.contractNum}}</td>
+            <td>{{contact.contactId}}</td>
+            <td>{{contact.contactName}}</td>
+            <td>{{contact.contactEmail}}</td>
+            <td>{{contact.contactNum}}</td>
             <td>
-              <button class="btn btn-danger" (click)="deleteContact(contact.contractId)">Delete</button>
+              <button class="btn btn-danger" (click)="deleteContact(contact.contactId)">Delete</button>
             &nbsp;
-              <button class="btn btn-info" (click)="editContact(contact.contractId)">Update</button>
+              <button class="btn btn-info" (click)="editContact(contact.contactId)">Update</button>
             </td>
         </tr>
     </tbody>

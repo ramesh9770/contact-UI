@@ -1,14 +1,13 @@
 <div class="col-md-6 offset-md-3">
     <h2>Update Contact</h2>
     <form (ngSubmit)="updateContact()">
-
         <div class="form-group">
             <label >Id</label>
             <input type="text" 
             class="form-control" 
             name="id" 
             id="id"
-            [(ngModel)]="contact.contractId"
+            [(ngModel)]="contact.contactId"
             readonly>
         </div>
 
@@ -19,7 +18,7 @@
             class="form-control" 
             name="name" 
             id="name"
-            [(ngModel)]="contact.contractName"
+            [(ngModel)]="contact.contactName"
             >
         </div>
         <br>
@@ -29,7 +28,7 @@
             class="form-control" 
             name="email" 
             id="email"
-            [(ngModel)]="contact.contractName"
+            [(ngModel)]="contact.contactEmail"
             >
         </div>
         <br>
@@ -39,7 +38,7 @@
             class="form-control" 
             name="phone" 
             id="phone"
-            [(ngModel)]="contact.contractEmail"
+            [(ngModel)]="contact.contactNum"
             >
         </div>
         <br>
